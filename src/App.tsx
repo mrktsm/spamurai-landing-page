@@ -21,16 +21,11 @@ function App() {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 {/* Logo container with gradient border */}
-                <div className="p-1 rounded-full bg-gradient-to-r from-red-600 via-red-500 to-red-600">
-                  <div className="bg-gray-950 rounded-full p-1">
-                    <FontAwesomeIcon
-                      icon={faShieldAlt}
-                      className="h-6 w-6 text-red-500"
-                    />
-                  </div>
+                <div className="bg-gray-950 rounded-full p-1">
+                  <img src="logo.png" alt="Logo" className="h-8 w-8" />
                 </div>
               </div>
-              <div className="ml-4 text-xl font-normal bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text">
+              <div className="ml-2 text-xl font-normal bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text">
                 Spamurai
               </div>
             </div>
