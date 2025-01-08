@@ -138,7 +138,7 @@ function Home() {
               <iframe
                 width="100%"
                 height="480"
-                src="https://www.youtube.com/embed/IcT6Te3EuV4"
+                src="https://www.youtube.com/embed/IcT6Te3EuV4?controls=0&modestbranding=1&showinfo=0&rel=0"
                 title="Product Demo Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
