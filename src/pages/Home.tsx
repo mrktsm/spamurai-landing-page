@@ -20,14 +20,18 @@ function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <div className="flex-shrink-0">
-                {/* Logo container with gradient border */}
-                <div className="bg-gray-950 rounded-full p-1">
-                  <img src="logo.png" alt="Logo" className="h-8 w-8" />
-                </div>
-              </div>
-              <div className="ml-2 text-xl font-normal bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text">
-                Spamurai
+              <div className="flex items-center">
+                <Link to="/" className="flex items-center">
+                  <div className="flex-shrink-0">
+                    {/* Logo container with gradient border */}
+                    <div className="bg-gray-950 rounded-full p-1">
+                      <img src="logo.png" alt="Logo" className="h-8 w-8" />
+                    </div>
+                  </div>
+                  <div className="ml-2 text-xl font-normal bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text">
+                    Spamurai
+                  </div>
+                </Link>
               </div>
             </div>
 
