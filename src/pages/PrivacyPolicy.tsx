@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white font-inter min-h-screen">
+    <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white font-sans min-h-screen">
       {/* Navigation - keeping consistent with main site */}
       <nav className="bg-gray-950/95 backdrop-blur-sm fixed w-full z-50">
         <div className="max-w-7xl mx-auto px-6">

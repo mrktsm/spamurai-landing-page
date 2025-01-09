@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/scrolltotop.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/pages/home.tsx","./src/pages/privacypolicy.tsx","./src/pages/termsofservice.tsx"],"version":"5.6.3"}
+{"root":["./src/app.tsx","./src/scrolltotop.tsx","./src/wavebackground.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/pages/home.tsx","./src/pages/privacypolicy.tsx","./src/pages/termsofservice.tsx"],"version":"5.6.3"}

@@ -15,7 +15,7 @@ function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white font-inter h-full">
+    <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white h-full font-sans">
       {/* Navigation */}
       <WaveBackground />
       <nav className="bg-gray-950/95 backdrop-blur-sm fixed w-full z-50">
