@@ -16,7 +16,7 @@ const TermsOfService = () => {
                 <div className="flex-shrink-0">
                   {/* Logo container with gradient border */}
                   <div className="bg-gray-950 rounded-full p-1">
-                    <img src="logo.png" alt="Logo" className="h-8 w-8" />
+                    <img src="logo_red.png" alt="Logo" className="h-8 w-8" />
                   </div>
                 </div>
                 <div className="ml-2 text-xl font-normal bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text">

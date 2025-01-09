@@ -9,6 +9,7 @@ import {
   faX,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import WaveBackground from "../WaveBackground";
 
 function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +17,7 @@ function Home() {
   return (
     <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white font-inter h-full">
       {/* Navigation */}
+      <WaveBackground />
       <nav className="bg-gray-950/95 backdrop-blur-sm fixed w-full z-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
@@ -25,7 +27,7 @@ function Home() {
                   <div className="flex-shrink-0">
                     {/* Logo container with gradient border */}
                     <div className="bg-gray-950 rounded-full p-1">
-                      <img src="logo.png" alt="Logo" className="h-8 w-8" />
+                      <img src="logo_red.png" alt="Logo" className="h-8 w-8" />
                     </div>
                   </div>
                   <div className="ml-2 text-xl font-normal bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text">
@@ -134,7 +136,10 @@ function Home() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto">
-            <div className="rounded-lg overflow-hidden shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+            <div
+              className="rounded-lg overflow-hidden shadow-[0_0_30px_rgba(220,38,38,0.2)]"
+              style={{ display: "block", width: "100%", height: "480px" }}
+            >
               <iframe
                 width="100%"
                 height="480"
