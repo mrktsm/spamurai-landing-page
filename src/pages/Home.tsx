@@ -132,18 +132,17 @@ function Home() {
         </div>
       </header>
 
-      {/* Video Section */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+      <section className="py-16 relative">
+        <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
           <div className="max-w-3xl mx-auto">
+            {/* Responsive Iframe Container */}
             <div
-              className="rounded-lg overflow-hidden shadow-[0_0_30px_rgba(220,38,38,0.2)]"
-              style={{ display: "block", width: "100%", height: "480px" }}
+              className="relative"
+              style={{ paddingTop: "63.5%" /* 16:10 aspect ratio */ }}
             >
               <iframe
-                width="100%"
-                height="480"
-                src="https://www.youtube.com/embed/IcT6Te3EuV4?controls=0&modestbranding=1&showinfo=0&rel=0"
+                className="absolute top-0 left-0 w-full h-full rounded-lg overflow-hidden shadow-[0_0_30px_rgba(220,38,38,0.2)]"
+                src="https://www.youtube.com/embed/kYLiuQEuTiY?controls=1&modestbranding=1&showinfo=0&rel=0"
                 title="Product Demo Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
