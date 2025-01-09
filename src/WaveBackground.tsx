@@ -16,11 +16,13 @@ const WaveBackground = () => {
     };
     handleResize();
 
+    // Adjust speeds and make the waves in the back taller
     const waves = Array.from({ length: 15 }, (_, i) => ({
       wavelength: 0.008,
-      amplitude: 70 - i * 2,
-      speed: (0.001 + i * 0.0001) * 0.5,
+      amplitude: 70 - i * 3, // Increase the difference between back and front wave heights
+      speed: 0.1 + i * 0.02, // Keep controlled speeds
       verticalOffset: i * 35,
+      offsetX: 0, // Initial horizontal offset
     }));
 
     const createGradient = (x: number, verticalOffset: number) => {
@@ -35,13 +37,16 @@ const WaveBackground = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas for transparency
 
       waves.forEach((wave, index) => {
-        const time = Date.now() * wave.speed;
+        // Adjust horizontal offset using speed
+        wave.offsetX += wave.speed * (index < waves.length / 2 ? 1.2 : 0.8); // Parallax effect with adjusted movement
+
+        // If the wave offset exceeds the canvas width, reset it
+        if (wave.offsetX > canvas.width) {
+          wave.offsetX = 0;
+        }
 
         ctx.beginPath();
-        ctx.strokeStyle = createGradient(
-          index * (canvas.width / waves.length),
-          wave.verticalOffset
-        );
+        ctx.strokeStyle = createGradient(wave.offsetX, wave.verticalOffset);
         ctx.lineWidth = 2;
 
         const yOffset = wave.verticalOffset;
@@ -49,8 +54,8 @@ const WaveBackground = () => {
         for (let x = 0; x <= canvas.width; x += 5) {
           const y =
             yOffset -
-            Math.sin(x * wave.wavelength + time) * wave.amplitude -
-            Math.sin(x * wave.wavelength * 0.5 + time * 1.5) *
+            Math.sin((x + wave.offsetX) * wave.wavelength) * wave.amplitude -
+            Math.sin((x + wave.offsetX) * wave.wavelength * 0.5) *
               wave.amplitude *
               0.3;
 
