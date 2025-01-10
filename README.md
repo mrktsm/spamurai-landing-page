@@ -1,21 +1,26 @@
-# Spamurai - AI-Powered Email Protection
+# Spamurai Landing Page
 
 <p align="center">
   <img src="public/logo_red.png" alt="Spamurai Logo" width="150" />
 </p>
 
-Spamurai is a powerful Chrome extension that provides AI-powered protection against email threats, spam, and phishing attempts. The extension leverages custom AI models to analyze email patterns and identify potential threats in real-time.
+This repository contains the landing page website for Spamurai, an AI-powered Chrome extension for email protection. The website serves as the primary marketing and information hub for the Spamurai Chrome extension.
 
-Visit us at [spamurai.online](https://spamurai.online)
+Visit the live site at [spamurai.online](https://spamurai.online)
 
-## 🚀 Features
+For the actual Chrome extension, visit our [extension repository](https://github.com/mrktsm/spamurai).
 
-- **AI-Powered Analysis**: Custom-built AI model for real-time threat detection
-- **Security Verification**: Automatic SPF and DKIM checks for email authenticity
-- **Spam Analytics**: Detailed tracking and visualization of spam reduction
-- **Link Scanner**: Deep scanning of embedded links and attachments
+## Overview
 
-## 🛠️ Tech Stack
+This landing page showcases Spamurai's features and capabilities, including:
+- AI-powered email threat detection
+- Security verification systems
+- Spam analytics and reporting
+- Link and attachment scanning
+
+The website is designed to funnel users to the Chrome Web Store (coming soon) where they can install the Spamurai extension.
+
+## Tech Stack
 
 - **Frontend Framework**: React with TypeScript
 - **Styling**: Tailwind CSS
@@ -28,16 +33,16 @@ Visit us at [spamurai.online](https://spamurai.online)
 ## Project Structure
 
 ```
-spamurai/
+spamurai-landing/
 ├── src/
 │   ├── pages/
-│   │   ├── Home.tsx
-│   │   ├── PrivacyPolicy.tsx
-│   │   └── TermsOfService.tsx
+│   │   ├── Home.tsx            # Main landing page
+│   │   ├── PrivacyPolicy.tsx   # Privacy policy page
+│   │   └── TermsOfService.tsx  # Terms of service page
 │   ├── components/
-│   │   └── WaveBackground.tsx
-│   ├── ScrollToTop.tsx
-│   └── App.tsx
+│   │   └── WaveBackground.tsx  # Animated background component
+│   ├── ScrollToTop.tsx         # Scroll restoration utility
+│   └── App.tsx                 # Main application component
 ├── public/
 │   └── logo_red.png
 └── index.html
@@ -47,12 +52,12 @@ spamurai/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/spamurai.git
+git clone https://github.com/yourusername/spamurai-landing.git
 ```
 
 2. Install dependencies:
 ```bash
-cd spamurai
+cd spamurai-landing
 npm install
 ```
 
@@ -66,11 +71,12 @@ npm run dev
 npm run build
 ```
 
-## Chrome Extension
+## Related Projects
 
-The Chrome extension will be available on the Chrome Web Store soon. The website's "Get Started", "Install Now", and "Add to Chrome" buttons will be updated with the Chrome Web Store link once published.
+- [Spamurai Chrome Extension](https://github.com/yourusername/spamurai-extension) - The main Chrome extension repository
+- Chrome Web Store Link (Coming Soon)
 
-## Development
+## 💻 Development
 
 This project uses:
 - TypeScript for type safety
@@ -85,6 +91,6 @@ The website is deployed on AWS and accessible at spamurai.online. The deployment
 2. AWS deployment
 3. Domain configuration
 
-## 📄 License
+## License
 
-This project is licensed under the MIT License - see [LICENSE](LICENSE) for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
