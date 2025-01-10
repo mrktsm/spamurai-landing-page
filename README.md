@@ -1,6 +1,6 @@
 # Spamurai - AI-Powered Email Protection
 
-![Spamurai Logo](logo_red.png)
+![Spamurai Logo](public/logo_red.png)
 
 Spamurai is a powerful Chrome extension that provides AI-powered protection against email threats, spam, and phishing attempts. The extension leverages custom AI models to analyze email patterns and identify potential threats in real-time.
 
