@@ -1,50 +1,88 @@
-# React + TypeScript + Vite
+# Spamurai - AI-Powered Email Protection
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Spamurai Logo](logo_red.png)
 
-Currently, two official plugins are available:
+Spamurai is a powerful Chrome extension that provides AI-powered protection against email threats, spam, and phishing attempts. The extension leverages custom AI models to analyze email patterns and identify potential threats in real-time.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visit us at [spamurai.online](https://spamurai.online)
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **AI-Powered Analysis**: Custom-built AI model for real-time threat detection
+- **Security Verification**: Automatic SPF and DKIM checks for email authenticity
+- **Spam Analytics**: Detailed tracking and visualization of spam reduction
+- **Link Scanner**: Deep scanning of embedded links and attachments
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Frontend Framework**: React with TypeScript
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **Routing**: React Router v6
+- **Icons**: Font Awesome
+- **Deployment**: AWS
+- **Domain**: spamurai.online
+
+## Project Structure
+
+```
+spamurai/
+├── src/
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── PrivacyPolicy.tsx
+│   │   └── TermsOfService.tsx
+│   ├── components/
+│   │   └── WaveBackground.tsx
+│   ├── ScrollToTop.tsx
+│   └── App.tsx
+├── public/
+│   └── logo_red.png
+└── index.html
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Getting Started
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/spamurai.git
 ```
+
+2. Install dependencies:
+```bash
+cd spamurai
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Build for production:
+```bash
+npm run build
+```
+
+## Chrome Extension
+
+The Chrome extension will be available on the Chrome Web Store soon. The website's "Get Started", "Install Now", and "Add to Chrome" buttons will be updated with the Chrome Web Store link once published.
+
+## Development
+
+This project uses:
+- TypeScript for type safety
+- Tailwind CSS for styling
+- React Router for navigation
+- Vite for fast development and optimized builds
+
+## Deployment
+
+The website is deployed on AWS and accessible at spamurai.online. The deployment process includes:
+1. Building the production bundle
+2. AWS deployment
+3. Domain configuration
+
+## 📄 License
+
+This project is licensed under the MIT License - see [LICENSE](LICENSE) for more details.
