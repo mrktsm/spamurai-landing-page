@@ -6,7 +6,7 @@ import {
   faChartLine,
   faSearch,
   faBars,
-  faX,
+  faClose,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import WaveBackground from "../WaveBackground";
@@ -53,7 +53,9 @@ function Home() {
                   Results
                 </a>
                 <a
-                  href="#"
+                  href="https://chromewebstore.google.com/detail/spamurai-shield-your-inbo/aelogdngopigomkfnmpnngfnbdmehkjg"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-red-500 text-white font-medium py-2 px-4 rounded-full hover:bg-white hover:text-red-500 border-2 border-red-500 transition duration-200"
                 >
                   Get Started
@@ -63,15 +65,13 @@ function Home() {
 
             {/* Mobile menu button */}
             <div className="md:hidden">
-              <button
+              <FontAwesomeIcon
+                icon={isMenuOpen ? faClose : faBars}
+                className={`h-5 w-5 text-gray-300 hover:text-red-400 transition-colors duration-200 cursor-pointer ${
+                  isMenuOpen ? "transform scale-90" : ""
+                }`}
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-300 hover:text-white"
-              >
-                <FontAwesomeIcon
-                  icon={isMenuOpen ? faX : faBars}
-                  className="h-6 w-6"
-                />
-              </button>
+              />
             </div>
           </div>
 
@@ -92,14 +92,10 @@ function Home() {
                   Results
                 </a>
                 <a
-                  href="#contact"
-                  className="text-gray-300 hover:text-red-400 transition-colors"
-                >
-                  Contact
-                </a>
-                <a
-                  href="#"
-                  className="bg-gradient-to-r from-red-600 to-red-500 text-white font-medium py-2 px-4 rounded-full text-center hover:opacity-90 transition-opacity"
+                  href="https://chromewebstore.google.com/detail/spamurai-shield-your-inbo/aelogdngopigomkfnmpnngfnbdmehkjg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-red-500 text-white font-medium py-2 px-4 rounded-full hover:bg-white hover:text-red-500 border-2 border-red-500 transition duration-200 w-fit"
                 >
                   Get Started
                 </a>
@@ -124,7 +120,9 @@ function Home() {
             analysis powered by custom AI
           </p>
           <a
-            href="#"
+            href="https://chromewebstore.google.com/detail/spamurai-shield-your-inbo/aelogdngopigomkfnmpnngfnbdmehkjg"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-red-500 text-white font-medium py-3 px-8 rounded-full text-lg hover:bg-white hover:text-red-500 border-2 border-red-500 transition duration-200 inline-block"
           >
             Add to Chrome - It's Free
@@ -248,10 +246,12 @@ function Home() {
             Protect Your Inbox Today
           </h2>
           <p className="text-lg text-gray-300 mb-8 font-light">
-            Join thousands of users who trust Spamurai for their email security
+            Start your journey to a safer inbox with Spamurai today.
           </p>
           <a
-            href="#"
+            href="https://chromewebstore.google.com/detail/spamurai-shield-your-inbo/aelogdngopigomkfnmpnngfnbdmehkjg"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-red-500 text-white font-medium py-3 px-8 rounded-full text-lg hover:bg-white hover:text-red-500 border-2 border-red-500 transition duration-200 inline-block"
           >
             Install Now
