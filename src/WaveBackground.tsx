@@ -16,11 +16,14 @@ const WaveBackground = () => {
     };
     handleResize();
 
-    // Adjust speeds and make the waves in the back taller
+    // Use a consistent base speed for all waves
+    const baseSpeed = 0.1;
+
+    // Adjust wavelength and amplitude while keeping speed consistent
     const waves = Array.from({ length: 15 }, (_, i) => ({
       wavelength: 0.008,
       amplitude: 70 - i * 3, // Increase the difference between back and front wave heights
-      speed: 0.1 + i * 0.02, // Keep controlled speeds
+      speed: baseSpeed, // Consistent speed for all waves
       verticalOffset: i * 35,
       offsetX: 0, // Initial horizontal offset
     }));
@@ -37,8 +40,8 @@ const WaveBackground = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas for transparency
 
       waves.forEach((wave, index) => {
-        // Adjust horizontal offset using speed
-        wave.offsetX += wave.speed * (index < waves.length / 2 ? 1.2 : 0.8); // Parallax effect with adjusted movement
+        // Update position using the consistent speed
+        wave.offsetX += wave.speed;
 
         // If the wave offset exceeds the canvas width, reset it
         if (wave.offsetX > canvas.width) {

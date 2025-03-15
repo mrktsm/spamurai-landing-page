@@ -15,10 +15,10 @@ function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white h-full font-sans">
+    <div className="bg-gradient-to-b from-stone-950 via-stone-900 to-stone-950 text-white h-full font-sans">
       {/* Navigation */}
       <WaveBackground />
-      <nav className="bg-gray-950/95 backdrop-blur-sm fixed w-full z-50">
+      <nav className="bg-stone-950/95 backdrop-blur-sm fixed w-full z-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -26,12 +26,16 @@ function Home() {
                 <Link to="/" className="flex items-center">
                   <div className="flex-shrink-0">
                     {/* Logo container with gradient border */}
-                    <div className="bg-gray-950 rounded-full p-1">
-                      <img src="logo_red.png" alt="Logo" className="h-8 w-8" />
+                    <div className="bg-stone-950 rounded-full p-1">
+                      <img
+                        src="spamurai-example.png"
+                        alt="Logo"
+                        className="h-6 w-6"
+                      />
                     </div>
                   </div>
-                  <div className="ml-2 text-xl font-normal bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text">
-                    Spamurai
+                  <div className="text-xl font-semibold bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text">
+                    SPAMURAI
                   </div>
                 </Link>
               </div>
@@ -42,13 +46,13 @@ function Home() {
               <div className="flex items-center space-x-8">
                 <a
                   href="#features"
-                  className="text-gray-300 hover:text-red-400 transition-colors"
+                  className="text-stone-300 hover:text-red-400 transition-colors"
                 >
                   Features
                 </a>
                 <a
                   href="#results"
-                  className="text-gray-300 hover:text-red-400 transition-colors"
+                  className="text-stone-300 hover:text-red-400 transition-colors"
                 >
                   Results
                 </a>
@@ -67,7 +71,7 @@ function Home() {
             <div className="md:hidden">
               <FontAwesomeIcon
                 icon={isMenuOpen ? faClose : faBars}
-                className={`h-5 w-5 text-gray-300 hover:text-red-400 transition-colors duration-200 cursor-pointer ${
+                className={`h-5 w-5 text-stone-300 hover:text-red-400 transition-colors duration-200 cursor-pointer ${
                   isMenuOpen ? "transform scale-90" : ""
                 }`}
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -81,13 +85,13 @@ function Home() {
               <div className="flex flex-col space-y-4">
                 <a
                   href="#features"
-                  className="text-gray-300 hover:text-red-400 transition-colors"
+                  className="text-stone-300 hover:text-red-400 transition-colors"
                 >
                   Features
                 </a>
                 <a
                   href="#results"
-                  className="text-gray-300 hover:text-red-400 transition-colors"
+                  className="text-stone-300 hover:text-red-400 transition-colors"
                 >
                   Results
                 </a>
@@ -109,13 +113,13 @@ function Home() {
       <header className="relative pt-32 pb-24 text-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-red-600/10 via-red-500/5 to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-6">
-          <h1 className="text-5xl font-normal bg-gradient-to-r from-red-500 via-red-400 to-red-500 text-transparent bg-clip-text mb-4">
-            Spamurai
+          <h1 className="text-5xl font-semibold bg-gradient-to-r from-red-500 via-red-400 to-red-500 text-transparent bg-clip-text mb-4">
+            SPAMURAI
           </h1>
           <h2 className="text-2xl font-normal mb-6">
             AI-Powered Protection Against Email Threats
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8 font-light">
+          <p className="text-lg text-stone-300 max-w-2xl mx-auto mb-8 font-light">
             Advanced security checks, spam detection, and real-time threat
             analysis powered by custom AI
           </p>
@@ -159,18 +163,18 @@ function Home() {
             Smart Protection for Your Inbox
           </h2>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="group bg-gray-900/50 backdrop-blur-sm p-8 rounded-lg text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+            <div className="group bg-stone-900/50 backdrop-blur-sm p-8 rounded-lg text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
               <FontAwesomeIcon
                 icon={faShieldAlt}
                 className="text-4xl text-red-500 mb-4 group-hover:scale-110 transition-transform duration-300"
               />
               <h3 className="text-xl font-medium mb-4">AI-Powered Analysis</h3>
-              <p className="text-gray-300 font-light">
+              <p className="text-stone-300 font-light">
                 Custom-built AI model analyzes email patterns and identifies
                 potential threats in real-time
               </p>
             </div>
-            <div className="group bg-gray-900/50 backdrop-blur-sm p-8 rounded-lg text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+            <div className="group bg-stone-900/50 backdrop-blur-sm p-8 rounded-lg text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
               <FontAwesomeIcon
                 icon={faLock}
                 className="text-4xl text-red-500 mb-4 group-hover:scale-110 transition-transform duration-300"
@@ -178,29 +182,29 @@ function Home() {
               <h3 className="text-xl font-medium mb-4">
                 Security Verification
               </h3>
-              <p className="text-gray-300 font-light">
+              <p className="text-stone-300 font-light">
                 Automatic SPF and DKIM checks to verify email authenticity and
                 prevent spoofing
               </p>
             </div>
-            <div className="group bg-gray-900/50 backdrop-blur-sm p-8 rounded-lg text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+            <div className="group bg-stone-900/50 backdrop-blur-sm p-8 rounded-lg text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
               <FontAwesomeIcon
                 icon={faChartLine}
                 className="text-4xl text-red-500 mb-4 group-hover:scale-110 transition-transform duration-300"
               />
               <h3 className="text-xl font-medium mb-4">Spam Analytics</h3>
-              <p className="text-gray-300 font-light">
+              <p className="text-stone-300 font-light">
                 Track spam reduction over time with detailed graphs and
                 improvement statistics
               </p>
             </div>
-            <div className="group bg-gray-900/50 backdrop-blur-sm p-8 rounded-lg text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+            <div className="group bg-stone-900/50 backdrop-blur-sm p-8 rounded-lg text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
               <FontAwesomeIcon
                 icon={faSearch}
                 className="text-4xl text-red-500 mb-4 group-hover:scale-110 transition-transform duration-300"
               />
               <h3 className="text-xl font-medium mb-4">Link Scanner</h3>
-              <p className="text-gray-300 font-light">
+              <p className="text-stone-300 font-light">
                 Deep scanning of embedded links and attachments for malware and
                 phishing attempts
               </p>
@@ -216,23 +220,23 @@ function Home() {
             Real Results
           </h2>
           <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gray-900/50 backdrop-blur-sm p-8 rounded-lg text-center transform hover:scale-105 transition-all hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+            <div className="bg-stone-900/50 backdrop-blur-sm p-8 rounded-lg text-center transform hover:scale-105 transition-all hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
               <h3 className="text-4xl bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text font-normal mb-2">
                 99.9%
               </h3>
-              <p className="text-gray-300 font-light">Threat Detection Rate</p>
+              <p className="text-stone-300 font-light">Threat Detection Rate</p>
             </div>
-            <div className="bg-gray-900/50 backdrop-blur-sm p-8 rounded-lg text-center transform hover:scale-105 transition-all hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+            <div className="bg-stone-900/50 backdrop-blur-sm p-8 rounded-lg text-center transform hover:scale-105 transition-all hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
               <h3 className="text-4xl bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text font-normal mb-2">
                 90%
               </h3>
-              <p className="text-gray-300 font-light">Spam Reduction</p>
+              <p className="text-stone-300 font-light">Spam Reduction</p>
             </div>
-            <div className="bg-gray-900/50 backdrop-blur-sm p-8 rounded-lg text-center transform hover:scale-105 transition-all hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+            <div className="bg-stone-900/50 backdrop-blur-sm p-8 rounded-lg text-center transform hover:scale-105 transition-all hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
               <h3 className="text-4xl bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text font-normal mb-2">
                 24/7
               </h3>
-              <p className="text-gray-300 font-light">Real-time Protection</p>
+              <p className="text-stone-300 font-light">Real-time Protection</p>
             </div>
           </div>
         </div>
@@ -245,7 +249,7 @@ function Home() {
           <h2 className="text-3xl font-normal bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text mb-6">
             Protect Your Inbox Today
           </h2>
-          <p className="text-lg text-gray-300 mb-8 font-light">
+          <p className="text-lg text-stone-300 mb-8 font-light">
             Start your journey to a safer inbox with Spamurai today.
           </p>
           <a
@@ -265,18 +269,18 @@ function Home() {
           <div className="flex flex-col md:flex-row justify-center gap-8 mb-4">
             <Link
               to="/privacy-policy"
-              className="text-gray-400 hover:text-red-400 transition-colors"
+              className="text-stone-400 hover:text-red-400 transition-colors"
             >
               Privacy Policy
             </Link>
             <Link
               to="/terms"
-              className="text-gray-400 hover:text-red-400 transition-colors"
+              className="text-stone-400 hover:text-red-400 transition-colors"
             >
               Terms of Service
             </Link>
           </div>
-          <p className="text-gray-400 text-sm font-light">
+          <p className="text-stone-400 text-sm font-light">
             © 2025 Spamurai. All rights reserved.
           </p>
         </div>
