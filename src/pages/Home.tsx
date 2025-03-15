@@ -16,9 +16,14 @@ function Home() {
 
   return (
     <div className="bg-gradient-to-b from-stone-950 via-stone-900 to-stone-950 text-white h-full font-sans">
+      {/* Gradient Circle Elements */}
+      <div className="fixed top-1 left-[40%] w-96 h-96 rounded-full bg-gradient-to-r from-red-500/20 to-red-700/10 blur-3xl"></div>
+      <div className="fixed top-3/4 right-1/2 w-80 h-80 rounded-full bg-gradient-to-r from-red-600/10 to-red-400/5 blur-3xl"></div>
+      <div className="fixed bottom-1/4 left-1/3 w-72 h-72 rounded-full bg-gradient-to-r from-red-500/15 to-red-800/5 blur-3xl"></div>
+
       {/* Navigation */}
       <WaveBackground />
-      <nav className="bg-stone-950/95 backdrop-blur-sm fixed w-full z-50">
+      <nav className="bg-stone-950/95 fixed w-full z-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -109,9 +114,8 @@ function Home() {
         </div>
       </nav>
 
-      {/* Header with enhanced gradient */}
+      {/* Header */}
       <header className="relative pt-32 pb-24 text-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-red-600/10 via-red-500/5 to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-6">
           <h1 className="text-5xl font-semibold bg-gradient-to-r from-red-500 via-red-400 to-red-500 text-transparent bg-clip-text mb-4">
             SPAMURAI
@@ -157,13 +161,12 @@ function Home() {
 
       {/* Features Section */}
       <section id="features" className="py-16 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-red-600/5 to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-normal bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text mb-8">
             Smart Protection for Your Inbox
           </h2>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="group bg-stone-900/50 backdrop-blur-sm p-8 rounded-lg text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+            <div className="group bg-stone-900/50 p-8 rounded-lg text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
               <FontAwesomeIcon
                 icon={faShieldAlt}
                 className="text-4xl text-red-500 mb-4 group-hover:scale-110 transition-transform duration-300"
@@ -174,7 +177,7 @@ function Home() {
                 potential threats in real-time
               </p>
             </div>
-            <div className="group bg-stone-900/50 backdrop-blur-sm p-8 rounded-lg text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+            <div className="group bg-stone-900/50 p-8 rounded-lg text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
               <FontAwesomeIcon
                 icon={faLock}
                 className="text-4xl text-red-500 mb-4 group-hover:scale-110 transition-transform duration-300"
@@ -187,7 +190,7 @@ function Home() {
                 prevent spoofing
               </p>
             </div>
-            <div className="group bg-stone-900/50 backdrop-blur-sm p-8 rounded-lg text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+            <div className="group bg-stone-900/50 p-8 rounded-lg text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
               <FontAwesomeIcon
                 icon={faChartLine}
                 className="text-4xl text-red-500 mb-4 group-hover:scale-110 transition-transform duration-300"
@@ -198,7 +201,7 @@ function Home() {
                 improvement statistics
               </p>
             </div>
-            <div className="group bg-stone-900/50 backdrop-blur-sm p-8 rounded-lg text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+            <div className="group bg-stone-900/50 p-8 rounded-lg text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
               <FontAwesomeIcon
                 icon={faSearch}
                 className="text-4xl text-red-500 mb-4 group-hover:scale-110 transition-transform duration-300"
@@ -220,19 +223,19 @@ function Home() {
             Real Results
           </h2>
           <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-stone-900/50 backdrop-blur-sm p-8 rounded-lg text-center transform hover:scale-105 transition-all hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+            <div className="bg-stone-900/50 p-8 rounded-lg text-center transform hover:scale-105 transition-all hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
               <h3 className="text-4xl bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text font-normal mb-2">
                 99.9%
               </h3>
               <p className="text-stone-300 font-light">Threat Detection Rate</p>
             </div>
-            <div className="bg-stone-900/50 backdrop-blur-sm p-8 rounded-lg text-center transform hover:scale-105 transition-all hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+            <div className="bg-stone-900/50 p-8 rounded-lg text-center transform hover:scale-105 transition-all hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
               <h3 className="text-4xl bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text font-normal mb-2">
                 90%
               </h3>
               <p className="text-stone-300 font-light">Spam Reduction</p>
             </div>
-            <div className="bg-stone-900/50 backdrop-blur-sm p-8 rounded-lg text-center transform hover:scale-105 transition-all hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+            <div className="bg-stone-900/50 p-8 rounded-lg text-center transform hover:scale-105 transition-all hover:shadow-[0_0_30px_rgba(220,38,38,0.2)]">
               <h3 className="text-4xl bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text font-normal mb-2">
                 24/7
               </h3>
@@ -244,7 +247,6 @@ function Home() {
 
       {/* CTA Section */}
       <section className="py-16 text-center relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-red-600/5 to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-normal bg-gradient-to-r from-red-500 to-red-400 text-transparent bg-clip-text mb-6">
             Protect Your Inbox Today
